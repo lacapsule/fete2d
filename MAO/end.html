@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/end.css">
+    <link rel="shortcut icon" href="media/img/lacapsule_favicon.png" type="image/x-icon">
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <title>Fin du Quizz</title>
+</head>
+<body>
+    <div class="container">
+        <div id="end" class="flex-center flex-column">
+            <h1 id="finalScore">0</h1>
+            <form cless="end-form-container">
+                <h2 id="end-text">Entrez votre nom ci-dessous pour enregistrer votre score !</h2>
+                <input type="text" name="name" id="username" placeholder="Entrez votre nom">
+                <div class="buttons">
+                    <button class="btn" id="saveScoreBtn" type="submit" onClick="saveHighScore(event)" disabled>Enregistrer</button>
+                    <a href="game.html" class="btn">Rejouer</a>
+                    <a href="../index.html" class="btn">Accueil <i class='bx bxs-home'></i></a>
+                </div>
+            </form>
+        </div>
+    </div>
+    
+    <script src="ressources/js/end.js"></script>
+
+
+</body>
+</html>

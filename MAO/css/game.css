@@ -1,0 +1,114 @@
+@import url(../../css/style.css);
+
+body{
+    font-family: var(--pol);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#question{
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    width: 80vw;
+}
+
+.choice-container {
+    display: var(--fl);
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+    margin-bottom: 0.8rem;
+    width: var(--full);
+    height: var(--full);
+    border-radius: 4px;
+    background: var(--principale);
+    font-size: 1.2rem;
+    font-family: var(--pol);
+}
+
+.choice-container:hover {
+    cursor: pointer;
+    background: var(--secondaire);
+    box-shadow: 0 0.4rem 1.4rem 0 var(--secondaire);
+    filter: drop-shadow(0 0 20px var(--secondaire)) drop-shadow(0 0 40px var(--secondaire)) drop-shadow(0 0 60px var(--secondaire));
+
+    transition: transform 100ms;
+    transform: scale(1.02);
+}
+
+.choice-prefix {
+    width: 10%;
+    padding: 2rem 2.5rem;
+    color: var(--textColor);
+    border-right: 2px ridge var(--textColor);
+}
+
+.choice-text {
+    padding: 2rem;
+    width: 100%;
+    color: var(--textColor);
+}
+
+.correct {
+    background: var(--good);
+}
+
+.incorrect {
+    background: var(--false);
+}
+
+
+#hud {
+    display: flex;
+    justify-content: space-between;
+}
+
+.go {
+    width: var(--full);
+    height: var(--full);
+    border-radius: 4px;
+    border: none;
+    background: var(--principale);
+    font-size: 1.2rem;
+    font-family: var(--pol);
+    cursor: pointer;
+    color: #FFF;
+}
+
+.hud-prefix {
+    text-align: center;
+    font-size: 2rem;
+    color: var(--textColor);
+}
+
+.hud-main-text {
+    text-align: center;
+    color: var(--textColor);
+}
+
+#progressBar {
+    width: 80%;
+    height: 3rem;
+    border: 0.2rem solid rgb(11,233,36);
+    margin-top: 2rem;
+    border-radius: 50px;
+    overflow: hidden;
+}
+
+#progressBarFull{
+    height: 100%;
+    margin: 0;
+    background: var(--good);
+    width: 0%;
+}
+.next {
+    display: none;
+}
+
+
+@media screen and(max-width: 768px) {
+    .choice-container {
+        min-width: 100%;
+    }
+}

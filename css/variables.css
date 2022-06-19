@@ -1,0 +1,55 @@
+@import url(fonts.css);
+
+:root {
+
+    /*Couleurs*/
+
+    --principale: linear-gradient(90deg, rgb(18,92,255) 0%, rgb(0,102,255) 100%);
+    --secondaire: #ff00f2;
+    --tertiaire: #ab6f4a;
+    --body:#292929;
+    --textColor: #fefefe;
+    --good: linear-gradient(32deg, rgb(11,233,36) 0%, rgb(41,232,111) 100%);
+    --false:linear-gradient(32deg, rgb(230,29,1) 0%, rgb(224,11,11) 100%);
+
+    /*Tailles*/
+
+    --full: 100%;
+    --title: 2em;
+    --text: 1.2em;
+    --textMin: 0.8em;
+    --res: 0;
+    --margin: 50px;
+
+    /*Police*/
+
+    --pol: 'Poppins';
+    --up: uppercase;
+
+    /*Flex*/
+
+    --fl: flex;
+    --desk: row wrap;
+    --desk-nw: row nowrap;
+    --mob: column nowrap;
+    --cen: center;
+    --sa: space-around;
+    --sb: space-between;
+    --fs: flex-start;
+    --fe: flex-end;
+
+    /*Positions*/
+
+    --abs: absolute;
+    --fix: fixed;
+    --rel: relative;
+    --stick: sticky;
+
+
+    /*Autre*/
+
+    --no: none;
+    --cover: cover;
+    --point: pointer;
+
+}

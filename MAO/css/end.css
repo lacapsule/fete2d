@@ -1,0 +1,50 @@
+@import url(../../css/style.css);
+
+
+.end-form-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input{
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    width: 80%;
+    padding: 1.5rem;
+    font-size: 1.8rem;
+    border: none;
+    box-shadow: 0 0.1rem 1.4rem 0 var(--principale);
+}
+
+input::placeholder {
+    color: var(--principale);
+}
+
+#username {
+    margin-bottom: 3rem;
+    width: 75%;
+    outline: none;
+}
+
+#end-text{
+    font-size: 2.4rem;
+    text-align: center;
+}
+
+#saveScoreBtn {
+    border: none;
+}
+
+.buttons {
+    display: flex;
+    flex-flow: var(--desk);
+    justify-content: space-between;
+    align-items: center;
+}
+.bxs-home{
+    margin-left: 1rem;
+    font-size: 2rem;
+    color: var(--textColor);
+}

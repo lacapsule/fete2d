@@ -1,0 +1,9 @@
+@import url(../../css/style.css);
+
+h2{
+    margin: 1rem;
+}
+
+.container {
+    width: 100%;
+}

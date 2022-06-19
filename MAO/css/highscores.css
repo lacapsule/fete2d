@@ -1,0 +1,28 @@
+@import url(../../css/style.css);
+
+h1 {
+    margin: 2rem;
+}
+
+ul {
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+li {
+    width: 30rem;
+    text-align: justify;
+    font-size: 2rem;
+    padding: 1rem;
+    font-family: var(--pol);
+    color: var(--textColor);
+    background: var(--tertiaire);
+}
+
+li:nth-child(even){
+    background: var(--secondaire);
+    color: var(--textColor);
+}

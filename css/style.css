@@ -1,0 +1,117 @@
+@import url(reset.css);
+@import url(variables.css);
+@import url(fonts.css);
+@import url(class.css);
+
+
+body{
+    width: 100%;
+    min-height: 100vh;
+    background: var(--body);
+}
+
+.liste{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hardware,
+.mao,
+.devWeb {
+    font-size: 2.4rem;
+    font-family: 'Poppins';
+    padding: 2rem 0;
+    width: 50%;
+    text-align: center;
+    margin-bottom: 1rem;
+    text-decoration: none;
+    color: var(--textColor);
+    background: var(--principale);
+    border-radius: 4px;
+    transition: .5s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.hardware:hover,
+.mao:hover,
+.devWeb:hover{
+    background: var(--secondaire);
+    filter: drop-shadow(0 0 20px var(--secondaire)) drop-shadow(0 0 40px var(--secondaire)) drop-shadow(0 0 60px var(--secondaire));
+
+}
+
+h1 {
+    font-size: 2rem;
+    color: var(--textColor);
+    font-family: var(--pol);
+}
+
+.title {
+    background: var(--tertiaire);
+    padding: 1.2rem;
+    color: var(--textColor);
+}
+
+h2 {
+    font-size: 1.2rem;
+    color: var(--textColor);
+    font-family: var(--pol);
+}
+
+.container {
+    width: 80%;
+    min-height: 100vh;
+    display: var(--fl);
+    justify-content: var(--cen);
+    align-items: var(--cen);
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.btn {
+    font-size: 2.4rem;
+    font-family: 'Poppins';
+    padding: 2rem 0;
+    width: 30rem;
+    text-align: center;
+    margin-bottom: 1rem;
+    text-decoration: none;
+    color: var(--textColor);
+    background: var(--principale);
+    border-radius: 4px;
+    transition: .5s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.btn:hover {
+    cursor: pointer;
+    box-shadow: 0 0.4rem 1.4rem 0 var(--principale);
+    filter: drop-shadow(0 0 20px var(--principale)) drop-shadow(0 0 40px var(--principale)) drop-shadow(0 0 60px var(--principale));
+    transform: scale(1.03);
+}
+
+.btn[disabled]:hover {
+    cursor: not-allowed;
+    box-shadow: none;
+    transform: none;
+}
+
+#highscore-btn {
+    background: var(--secondaire);
+}
+
+
+#highscore-btn:hover {
+    box-shadow: 0 0.4 1.4rem 0 rgba(255,255,0,.5);
+}
+
+
+.bxs-crown {
+    font-size: 2.5rem;
+    margin-left: 1rem;
+}

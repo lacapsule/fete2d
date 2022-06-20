@@ -68,7 +68,7 @@ let questions = [
         question: 'Quel est le titre ?',
         song: 'media/mp3/gazo.mp3',
         choice1: 'Gazo - CELINE 3x',
-        choice2: 'Gazo - MOLLY',
+        choice2: 'Gazo - ColorShow',
         choice3: 'Gazo - Tchin 2x',
         choice4: 'Gazo feat Freeze Corleone 667',
         answer: 2,
